@@ -18,7 +18,7 @@ It solves the distributed consensus problem of the election of a primary among p
 
 ### Chubby Cell 
 ![](images/system_structure.png)
-Image from [Camille's slides](https://speakerd.s3.amazonaws.com/presentations/1c13da90525401327aec02fb58ce8c77/skamille_slides.pdf)
+* Image from [Camille's slides](https://speakerd.s3.amazonaws.com/presentations/1c13da90525401327aec02fb58ce8c77/skamille_slides.pdf)
 
 - serves 10K 4-processor boxes connected with 1GBit ethernet.
 - most cells are confined to a single data centre
@@ -60,11 +60,11 @@ The master periodically polls the DNS and will pick up the change. The master th
 
 ## Locks and sequencers
 
-# Supporting technologies
-## Paxos (from wikipedia)
+## Supporting technologies
+### Paxos (from wikipedia)
 Paxos is a family of protocols for solving consensus in a network of unreliable processors. Consensus is the process of agreeing on one result among a group of participants. This problem becomes difficult when the participants or their communication medium may experience failures.
 
-## Remote Procedue Calls (RPC)
+### Remote Procedue Calls (RPC)
 The notion of calling a procedure that does not exist in the same address space. The two processes might be on the same system or on different systems connected by a network. 
 
 Using RPC allows the user to avoid the deatils of the interface with the network.
